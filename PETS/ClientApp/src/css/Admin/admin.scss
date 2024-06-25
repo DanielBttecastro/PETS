@@ -1,0 +1,556 @@
+$colorfondo: #579dff;
+$colorModif: #5773ff;
+$colorElimi: #ff5757;
+$colorGuradr: #1bec2d;
+$colorModificar:#ec981b;
+
+body {
+    background-color: $colorfondo;
+    overflow-y: scroll;
+    line-height: 1.25;  
+    overflow: auto;
+}
+
+.Contenedor {
+    background-color: white;
+}
+
+//Butons
+button {
+    margin: 2px;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:
+        inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.btn-3 {
+    background: $colorfondo;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $colorfondo;
+    transition: all 0.3s ease;
+}
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.btn-3:hover:before {
+    height: 100%;
+}
+.btn-3:hover:after {
+    width: 100%;
+}
+.btn-3 span:hover {
+    color: $colorfondo;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $colorfondo;
+    transition: all 0.3s ease;
+}
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3 span:hover:before {
+    height: 100%;
+}
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+//Botones de modificar
+
+.btn-4 {
+    background: $colorModif;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $colorModif;
+    transition: all 0.3s ease;
+}
+.btn-4:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-4:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-4:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.btn-4:hover:before {
+    height: 100%;
+}
+.btn-4:hover:after {
+    width: 100%;
+}
+.btn-4 span:hover {
+    color: $colorModif;
+}
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $colorModif;
+    transition: all 0.3s ease;
+}
+.btn-4 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-4 span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-4 span:hover:before {
+    height: 100%;
+}
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+//Botones de eliminar
+
+.btn-5 {
+    background: $colorElimi;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-5 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-5:before,
+.btn-5:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $colorElimi;
+    transition: all 0.3s ease;
+}
+.btn-5:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-5:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-5:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.btn-5:hover:before {
+    height: 100%;
+}
+.btn-5:hover:after {
+    width: 100%;
+}
+.btn-5 span:hover {
+    color: $colorElimi;
+}
+.btn-5 span:before,
+.btn-5 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $colorElimi;
+    transition: all 0.3s ease;
+}
+.btn-5 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-5 span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-5 span:hover:before {
+    height: 100%;
+}
+.btn-5 span:hover:after {
+    width: 100%;
+}
+ 
+
+//boton guardar 
+
+.btn-Guardar {
+    background: $colorGuradr;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-Guardar span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-Guardar:before,
+.btn-Guardar:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $colorGuradr;
+    transition: all 0.3s ease;
+}
+.btn-Guardar:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-Guardar:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-Guardar:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.btn-Guardar:hover:before {
+    height: 100%;
+}
+.btn-Guardar:hover:after {
+    width: 100%;
+}
+.btn-Guardar span:hover {
+    color: $colorGuradr;
+}
+.btn-Guardar span:before,
+.btn-Guardar span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $colorGuradr;
+    transition: all 0.3s ease;
+}
+.btn-Guardar span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-Guardar span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-Guardar span:hover:before {
+    height: 100%;
+}
+.btn-Guardar span:hover:after {
+    width: 100%;
+}
+
+
+//boton Modificar 
+
+.btn-Modificar {
+    background: $colorModificar;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-Modificar span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-Modificar:before,
+.btn-Modificar:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $colorModificar;
+    transition: all 0.3s ease;
+}
+.btn-Modificar:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-Modificar:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-Modificar:hover {
+    background: transparent;
+    box-shadow: none;
+}
+.btn-Modificar:hover:before {
+    height: 100%;
+}
+.btn-Modificar:hover:after {
+    width: 100%;
+}
+.btn-Modificar span:hover {
+    color: $colorModificar;
+}
+.btn-Modificar span:before,
+.btn-Modificar span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $colorModificar;
+    transition: all 0.3s ease;
+}
+.btn-Modificar span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-Modificar span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-Modificar span:hover:before {
+    height: 100%;
+}
+.btn-Modificar span:hover:after {
+    width: 100%;
+}
+
+//Stilos para los input
+.row {
+    background-color: white;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 50px;
+    margin-top: -20px;
+    .column1 {
+        padding-top: 8%;
+        padding-left: 15%;
+    }
+
+    .column2 {
+        padding-top: 8%;
+        padding-right: 10%;
+        
+        .group{
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+
+    select {
+        position: relative;
+        display: block;
+        width: 300px;
+        margin-top: 2%;
+    }
+
+    button{
+        margin-right: 35%;
+    }
+}
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+.label {
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+    top: -20px;
+    font-size: 20px;
+    color: $colorfondo;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+.bar:before,
+.bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $colorfondo;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: $colorfondo;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@-moz-keyframes inputHighlighter {
+    from {
+        background: $colorfondo;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+@keyframes inputHighlighter {
+    from {
+        background: $colorfondo;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+//Select
+.labelSelect {
+    top: -32px;
+    font-size: 20px;
+    color: $colorfondo;
+}
+.image-button {
+    background: none;
+    border: none;
+    cursor: default; /* Establece el cursor como el predeterminado (sin cambio) */
+    padding: 0;
+  }
+  
+  .image-button img {
+    width: 32px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 32px; /* Ajusta la altura de la imagen según tus preferencias */
+  }
